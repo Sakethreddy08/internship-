@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍳 Interactive Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🍳 Interactive Recipe Finder</h1>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" id="ingredientInput" placeholder="Enter ingredients (e.g., chicken, onion)">
+      <button onclick="fetchRecipes()">Find Recipes</button>
+    </section>
+
+    <section id="searchHistory" class="search-history"></section>
+
+    <section>
+      <h2>🔎 Search Results</h2>
+      <div id="results" class="results-grid"></div>
+    </section>
+
+    <section>
+      <h2>⭐ Saved Favorites</h2>
+      <div id="favorites" class="results-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ using Spoonacular API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
